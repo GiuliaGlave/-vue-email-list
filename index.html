@@ -49,12 +49,17 @@
   <body>
     <div
       id="app"
-      class="text-center mt-5"
+      class="mt-5 ps-5"
     >
-      <h1>lista email</h1>
-      <div>
+      <h1>Lista email</h1>
+      <div class="">
         <ul>
-          <li v-for="email in emailList">{{email}}</li>
+          <li
+            class="p-2"
+            v-for="email in emailList"
+          >
+            {{email}}
+          </li>
         </ul>
       </div>
     </div>

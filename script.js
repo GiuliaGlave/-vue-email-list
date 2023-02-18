@@ -14,6 +14,11 @@ const app = Vue.createApp({
         .then((response) => {
           /* console.log(response.data.response); */
           this.emailList.push(response.data.response);
+
+          //stampo le email solo quando le ricevo tutte e 10
+          if (this.emailList.length >= 10) {
+            console.log();
+          }
         });
     }
   },
